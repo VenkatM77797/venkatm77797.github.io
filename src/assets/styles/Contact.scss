@@ -1,0 +1,39 @@
+#contact {
+ padding-top: 20px;
+ padding-bottom: 20px;   // ↓ reduced from big values
+ text-align: center;
+ margin-top: -150px; 
+}
+
+.contact_wrapper {
+ max-width: 600px;
+  margin:  auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   // THIS centers everything
+  
+}
+
+.contact_wrapper h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2px;
+}
+
+.contact-text {
+  font-size: 1.05rem;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.05rem;
+  color: #4f6ef7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
