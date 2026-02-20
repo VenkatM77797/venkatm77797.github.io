@@ -3,8 +3,7 @@
   padding-bottom: 60px;
   text-align: center;
 
-  margin-top: 0;          /* ✅ remove negative margin */
-  position: relative;     /* ✅ keep it in normal flow */
+  position: relative;
   z-index: 1;
 }
 .contact_wrapper {
@@ -16,6 +15,11 @@
   
 }
 
+footer {
+  position: relative;
+  z-index: 5;   /* higher than contact */
+  padding-top: 40px;
+}
 .contact_wrapper h1 {
   font-size: 2.2rem;
   margin-bottom: 2px;
@@ -35,6 +39,7 @@
   text-decoration: none;
   font-weight: 500;
 }
+
 
 .contact-email:hover {
   text-decoration: underline;
