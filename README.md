@@ -84,3 +84,26 @@ You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/)
 4. **Access Your Deployed App**
 
     After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+
+
+## How To Apply Your New Changes
+
+1. **Open Terminal in Your Project Folder**
+   Go to your portfolio project directory:
+   ``` bash
+    cd path/to/your/portfolio-project
+   ```
+
+2. **Commit Your Changes**
+   ``` bash
+    git add .
+    git commit -m "Update Expertise section styling and tech stack"
+   ```
+3. **Deploy to GitHub Pages**
+   ``` bash
+    npm run deploy
+   ```
+
+4. **Wait 30–60 Seconds**
+Then refresh:
+   
