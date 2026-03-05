@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f4f5427.css",
+    "main.css": "/static/css/main.ebc76920.css",
     "main.js": "/static/js/main.0803b63b.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/Venkat_New_Image.png": "/static/media/Venkat_New_Image.96d802098adda7e08633.png",
@@ -10,12 +10,12 @@
     "static/media/mock02.png": "/static/media/mock02.7f3b6c2e20622d4ee1d8.png",
     "static/media/mock03.png": "/static/media/mock03.3fc8494dddb45ba5417c.png",
     "index.html": "/index.html",
-    "main.1f4f5427.css.map": "/static/css/main.1f4f5427.css.map",
+    "main.ebc76920.css.map": "/static/css/main.ebc76920.css.map",
     "main.0803b63b.js.map": "/static/js/main.0803b63b.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f4f5427.css",
+    "static/css/main.ebc76920.css",
     "static/js/main.0803b63b.js"
   ]
 }
