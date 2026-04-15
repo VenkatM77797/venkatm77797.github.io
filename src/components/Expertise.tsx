@@ -1,73 +1,86 @@
 import React from "react";
 import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
+import { GitHub } from "@mui/icons-material";
 
-const dataAnalysisTools = [
-  "SQL",
-  "MS Excel",
-  "Pivot Tables",
-  "Data Validation",
-  "Power BI",
-  "Data Visualization",
-  "Pandas",
-  "Matplotlib",
-  "Data Cleaning"
+
+const frontendTools = [
+  "React",
+  "JavaScript",
+  "HTML",
+  "CSS",
 ];
 
-const automationTools = [
+const backendTools = [
   "Python",
-  "Excel Automation",
-  "Data Cleaning",
-  "Reporting Scripts",
-  "Git",
-  "Workflow Optimization"
+  "Node.js",
+  "NestJS",
+  "REST APIs",
+  "Authentication",
 ];
 
-const mlTools = [
-  "NLP",
-  "TF-IDF",
-  "scikit-learn",
-  "Sentiment Analysis",
-  "Chatbot Development",
-  "Vector Similarity"
+const databaseTools = [
+  "PostgreSQL",
+  "Prisma",
+  "Database Design",
+  "Git"
+];
+
+const dataTools = [
+  "pandas",
+  "Git",
+  "GitHub",
+  "Vercel",
+  "Data Analysis",
+  "Automation",
+  "Data Cleaning"
 ];
 
 function Expertise() {
   return (
     <div className="container" id="expertise">
       <div className="skills-container">
+
         <h1>Expertise</h1>
+        <p className="subtitle">What I work with and build using</p>
 
         <div className="skills-grid">
 
-          {/* Data Analysis */}
           <div className="skill">
-            <h3>Data Analysis & Reporting</h3>
+            <h3>Frontend Development</h3>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
-              {dataAnalysisTools.map((tool, index) => (
+              {frontendTools.map((tool, index) => (
                 <Chip key={index} className="chip" label={tool} />
               ))}
             </div>
           </div>
 
-          {/* Automation */}
           <div className="skill">
-            <h3>Python Automation</h3>
+            <h3>Backend Development</h3>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
-              {automationTools.map((tool, index) => (
+              {backendTools.map((tool, index) => (
                 <Chip key={index} className="chip" label={tool} />
               ))}
             </div>
           </div>
 
-          {/* ML / NLP */}
           <div className="skill">
-            <h3>NLP & Machine Learning</h3>
+            <h3>Database & Tools</h3>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
-              {mlTools.map((tool, index) => (
+              {databaseTools.map((tool, index) => (
+                <Chip key={index} className="chip" label={tool} />
+              ))}
+            </div>
+          </div>
+
+          <div className="skill">
+            <h3>Data & Automation</h3>
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+              {dataTools.map((tool, index) => (
                 <Chip key={index} className="chip" label={tool} />
               ))}
             </div>
