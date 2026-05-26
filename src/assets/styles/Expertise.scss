@@ -1,44 +1,98 @@
-/* Whole Expertise section */
 #expertise {
   width: 100%;
-  min-height: 100vh;        /* keeps Career below the fold on all screens */
-  padding: 70px 20px 90px;  /* top/right-left/bottom */
+  min-height: 100vh;
+  padding: 70px 20px 90px;
   box-sizing: border-box;
 }
 
-/* Container */
+/* Light theme */
+.light #expertise,
+body.light #expertise,
+[data-theme="light"] #expertise {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.light #expertise h1,
+.light #expertise .subtitle,
+body.light #expertise h1,
+body.light #expertise .subtitle,
+[data-theme="light"] #expertise h1,
+[data-theme="light"] #expertise .subtitle {
+  color: #111111 !important;
+}
+
+/* Dark theme */
+.dark #expertise,
+body.dark #expertise,
+[data-theme="dark"] #expertise {
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+.dark #expertise h1,
+.dark #expertise .subtitle,
+body.dark #expertise h1,
+body.dark #expertise .subtitle,
+[data-theme="dark"] #expertise h1,
+[data-theme="dark"] #expertise .subtitle {
+  color: #ffffff !important;
+}
+
 .skills-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   align-items: start;
 }
 
-/* Each card */
 .skill {
   width: 100%;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-sizing: border-box;
 }
 
-/* Chips wrap nicely */
+.skill h3 {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
 .flex-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
 }
 
 .chip-title {
   margin-right: 10px;
   white-space: nowrap;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
-/* ✅ Tablet */
+#expertise .chip.MuiChip-root {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border-radius: 999px !important;
+  font-weight: 600 !important;
+}
+
+#expertise .chip.MuiChip-root .MuiChip-label {
+  color: #111111 !important;
+  font-weight: 600 !important;
+}
+
 @media (max-width: 1024px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -46,54 +100,20 @@
   }
 }
 
-/* ✅ Mobile */
 @media (max-width: 600px) {
   #expertise {
     padding: 60px 16px 80px;
-    min-height: auto;       /* better on small screens */
+    min-height: auto;
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;  /* stack */
+    grid-template-columns: 1fr;
     gap: 22px;
   }
 
   .chip-title {
-    width: 100%;            /* "Tech stack:" goes on its own line */
+    width: 100%;
     margin-right: 0;
     margin-bottom: 6px;
   }
-}
-/* Force MUI chip to be visible on dark background */
-#expertise .chip.MuiChip-root {
-  background-color: #ffffff !important;
-  color: #111111 !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-}
-
-#expertise .chip .MuiChip-label {
-  color: #111111 !important;
-  font-weight: 600;
-}
-/* ===== Fix chip visibility (MUI overrides) ===== */
-#expertise .flex-chips .chip {
-  opacity: 1 !important;
-  background: #ffffff !important;
-  border: none !important;
-}
-
-#expertise .flex-chips .chip,
-#expertise .flex-chips .chip * {
-  color: #111111 !important;
-}
-
-#expertise .chip-title {
-  color: #ffffff !important;
-  font-weight: 600;
-}
-
-/* Optional: make chips look better */
-#expertise .flex-chips .chip.MuiChip-root {
-  border-radius: 999px !important;
-  padding: 2px 6px !important;
 }
