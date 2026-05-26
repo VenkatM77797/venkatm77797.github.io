@@ -11,8 +11,29 @@ function Timeline() {
     <div id="history">
       <div className="items-container">
         <h1>Career History</h1>
-
         <VerticalTimeline>
+
+          {/* Software Developer */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
+            contentArrowStyle={{ borderRight: "7px solid white" }}
+            date="Mar 2026 – Present"
+            iconStyle={{ background: "#5000ca", color: "white" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Software Developer</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              ECHO IT SOLUTIONS Pvt Ltd
+            </h4>
+            <p>
+              I build modern full-stack web applications with a focus on clean user interfaces, 
+              scalable backend systems, and data-driven solutions. My work includes developing 
+              responsive frontend experiences using React and Tailwind CSS, building backend APIs 
+              with Node.js, NestJS, TypeScript, and Python, managing databases with SQL and PostgreSQL, and deploying applications using AWS.
+            </p>
+          </VerticalTimelineElement>
+
           {/* IT Tutor */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
