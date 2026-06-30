@@ -26,8 +26,7 @@ function Education() {
             </h4>
             <p>
               Relevant coursework: Web Programming, Database Systems, Object-Oriented Design,
-              Software Engineering, JAVA, Python, Graduate projects included building a finance dashboard
-              using React and REST APIs and implementing data handling algorithms in Python.
+              Software Engineering, JAVA, Python, Artificial Intelligence, Cybersecurity
             </p>
           </VerticalTimelineElement>
 
@@ -43,11 +42,16 @@ function Education() {
               Bachelor of Technology in Computer Science and Engineering
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Gayatri Vidya Parishad College · Visakhapatnam, IND
+              Andhra University · Visakhapatnam, IND
             </h4>
             <p>
-              Relevant coursework: OOP, Computer Networks, Operating Systems,
-              Software Development Life Cycle (SDLC).
+              Relevant coursework: Data Structures & Algorithms (DSA), Object-Oriented Programming (C++ / Java) Database Management Systems (DBMS),
+              Operating Systems (OS),
+              Computer Networks,
+              Software Engineering,
+              Computer Organization & Architecture,
+              Web Development, IoT, Cloud Computing
+
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
