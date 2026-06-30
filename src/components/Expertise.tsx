@@ -2,30 +2,52 @@ import React from "react";
 import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
 
-const frontendTools = ["React", "JavaScript", "HTML", "CSS"];
+const frontendTools = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+];
 
 const backendTools = [
   "Python",
   "Node.js",
   "NestJS",
+  "Express.js",
+  "FastAPI",
   "REST APIs",
-  "Authentication",
 ];
 
 const databaseTools = [
   "PostgreSQL",
-  "Prisma",
+  "SQL",
+  "Prisma ORM",
+  "SQLite",
+  "ChromaDB",
   "Database Design",
-  "Git",
 ];
 
 const dataTools = [
   "pandas",
-  "GitHub",
-  "Vercel",
+  "Streamlit",
+  "RAG",
+  "Ollama",
+  "Llama 3",
+  "Sentence Transformers",
   "Data Analysis",
   "Automation",
   "Data Cleaning",
+];
+
+const developerTools = [
+  "Git",
+  "GitHub",
+  "Docker",
+  "Docker Compose",
+  "Vercel",
 ];
 
 function Expertise() {
